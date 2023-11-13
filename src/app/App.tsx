@@ -1,6 +1,6 @@
 import './App.scss';
 import {Routes, Route} from 'react-router-dom';
-// import Register from "./Register/Register";
+import Register from "./Register/Register";
 import Partners from "./Partners/Partners";
 // import Partner from "./Partner/Partner";
 

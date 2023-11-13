@@ -1,3 +1,22 @@
 .partners {
 
+  &__main {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0 0 56px 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1600px;
+    width: 100%;
+    gap: 20px;
+  }
 }
