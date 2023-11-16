@@ -1,0 +1,36 @@
+.nav-button {
+  display: inline-flex;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #F8F8F8;
+
+  &__text {
+    color: #F8F8F8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 136.187%; /* 21.79px */
+  }
+
+  &__img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-button {
+    border: none;
+    width: 40px;
+    height: 40px;
+
+    &__text {
+      display: none;
+    }
+
+    &__img {
+      display: block;
+    }
+  }
+}

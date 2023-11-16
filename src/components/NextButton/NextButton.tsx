@@ -1,5 +1,6 @@
 import './NextButton.scss';
 import icoBtn from './ico_arrow.svg';
+
 const NextButton = () => {
     return(
         <button className="next-button">
