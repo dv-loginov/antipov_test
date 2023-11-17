@@ -1,16 +1,16 @@
 import './App.scss';
 import {Routes, Route} from 'react-router-dom';
 import Register from "./Register/Register";
-import Partners from "./Partners/Partners";
-// import Partner from "./Partner/Partner";
+import Team from "./Team/Team";
+import Partner from "./Partner/Partner";
 
 function App() {
     return (
         <div className="app">
             <Routes>
-                {/*<Route path='/' element={<Register/>}/>*/}
-                <Route path='/' element={<Partners/>}/>
-                {/*<Route path='*' element={<Partner/>}/>*/}
+                <Route path='/' element={<Register/>}/>
+                <Route path='/team' element={<Team/>}/>
+                <Route path='/partner' element={<Partner/>}/>
             </Routes>
         </div>
     )

@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 980px) {
   .nav-button {
     border: none;
     width: 40px;
@@ -32,5 +32,11 @@
     &__img {
       display: block;
     }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .nav-button {
+    padding: 0;
   }
 }

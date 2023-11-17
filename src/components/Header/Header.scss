@@ -1,3 +1,20 @@
 .header {
+  display:flex;
+  justify-content: space-between;
+  background: #512689;
+  color: #FFF;
+  padding: 40px 80px;
 
+  &__btn {
+    &_hidden {
+      visibility: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+
+    padding: 12px 18px;
+  }
 }
