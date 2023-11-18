@@ -3,7 +3,6 @@ import './HeaderContent.scss';
 type ContentProps = { page: string }
 
 const HeaderContent = ({page}: ContentProps) => {
-    console.log(page);
     if (page === '/team')
         return (
             <div className="header__content header__content_page-team">

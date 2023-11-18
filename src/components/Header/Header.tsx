@@ -8,9 +8,7 @@ import IcoExit from './exit_ico.svg';
 const Header = () => {
     const location = useLocation();
     const page = location.pathname;
-    // const page = '/partner';
     const hidden = page === '/team';
-    // const hidden = false;
     return (
         <header className="header">
             <nav className={`header__btn ${hidden ? 'header__btn_hidden' : ''}`}>

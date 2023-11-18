@@ -1,13 +1,18 @@
-class Api {}
+const baseUrl = 'https://reqres.in'
 
-const api = new Api(
-    // {
-    // baseUrl: 'http://localhost:3005',
-    // headers: {
-    //     "Accept": "application/json",
-    //     "Content-Type": "application/json"
-    // },
-// }
-);
 
-export default api;
+export function getUsers(page: number = 1) {
+    return request(`api/users?page=${page}`);
+}
+
+function request(endpoint:string) {
+    return fetch(`${baseUrl}/${endpoint}`).then(getResponseData)
+}
+
+function getResponseData(res:any)
+{
+    if (!res.ok) {
+        return Promise.reject(`Ошибка: ${res.status}`);
+    }
+    return res.json();
+}

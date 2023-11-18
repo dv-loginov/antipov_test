@@ -1,9 +1,20 @@
+import { useEffect } from 'react';
 import './Team.scss';
 import Header from "../../components/Header/Header";
 import Card from "../../components/Card/Card";
 import NextButton from "../../components/NextButton/NextButton";
+import {getUsers} from "../../api/api";
 
 const Team = () => {
+
+    useEffect(() => {
+        getUsers()
+            .then((data) => {
+                console.log(data);
+            })
+            .catch((err) => console.error(err));
+    }, []);
+
     return (
         <div className='team'>
             <Header />
