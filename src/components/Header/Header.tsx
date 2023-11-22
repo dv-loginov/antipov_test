@@ -2,7 +2,9 @@ import './Header.scss';
 import {useLocation} from "react-router-dom";
 import NavButton from "../NavButton/NavButton";
 import HeaderContent from "../HeaderContent/HeaderContent";
-import IcoBack from './back_ico.svg';
+// @ts-ignore
+import IcoBack from "./back_ico.svg";
+// @ts-ignore
 import IcoExit from './exit_ico.svg';
 
 const Header = () => {

@@ -1,5 +1,7 @@
 import './Card.scss';
+// @ts-ignore
 import likeIco from './like.svg';
+// @ts-ignore
 import dislikeIco from './not_like.svg';
 
 const Card = () => {

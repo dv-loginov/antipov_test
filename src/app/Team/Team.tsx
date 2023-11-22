@@ -1,11 +1,15 @@
-import { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import './Team.scss';
 import Header from "../../components/Header/Header";
 import Card from "../../components/Card/Card";
 import NextButton from "../../components/NextButton/NextButton";
 import {getToken, getUsers} from "../../api/api";
+import {useTypedSelector} from "../../hooks/useTypedSelector";
 
-const Team = () => {
+const Team: React.FC = () => {
+
+    const {users, error, loading} = useTypedSelector(state => state.user);
+    console.log(users);
 
     useEffect(() => {
         getUsers()
@@ -23,19 +27,19 @@ const Team = () => {
 
     return (
         <div className='team'>
-            <Header />
+            <Header/>
             <main className='team__main'>
                 <ul className='team__list'>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
                 </ul>
-                <NextButton />
+                <NextButton/>
             </main>
         </div>
     );
