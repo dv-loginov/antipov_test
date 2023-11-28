@@ -1,15 +1,16 @@
 import './Card.scss';
-// @ts-ignore
 import likeIco from './like.svg';
-// @ts-ignore
 import dislikeIco from './not_like.svg';
 
-const Card = () => {
+type CardProps = { id: number, name: string, avatar: string }
+
+const Card = ({id, name, avatar}: CardProps) => {
+    console.log(id);
     const isLike = false;
     return (
-        <li className='card'>
-            <img src={require('./fototest.png')} className='card__photo' alt='фото пользователя'/>
-            <h2 className='card__name'>Артур Королев</h2>
+        <li className='card' key={id}>
+            <img src={avatar} className='card__photo' alt='фото пользователя'/>
+            <h2 className='card__name'>{name}</h2>
             <button className='card__like-btn'>
                 <img src={isLike ? likeIco : dislikeIco}
                      className='card__like-ico'
