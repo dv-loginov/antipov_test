@@ -23,7 +23,7 @@ const Team: React.FC = () => {
         return <h1> Error {error}</h1>
     }
 
-    console.log(users);
+    // console.log(users);
     return (
         <div className='team'>
             <Header/>

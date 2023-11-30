@@ -1,7 +1,11 @@
+import { useParams } from 'react-router-dom';
 import './Partner.scss';
 import Header from "../../components/Header/Header";
 
 const Partner = () => {
+    const params = useParams();
+    const userId = params.id;
+    console.log(userId);
     return (
         <div className="partner">
             <Header/>
